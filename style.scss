@@ -1,0 +1,278 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    height: 100vh;
+    font-size: 100%;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr 1.5fr;
+    grid-template-rows: 1fr 4fr 3fr 2fr;
+    height: 100vh;
+    width: min(100%, 40rem);
+    margin-inline: auto;
+    // text-align: center;
+    color: beige;
+    gap: .5rem;
+
+}
+
+.main {
+    grid-area: 1/1/3/3;
+    color: #131313;
+    // background: rgb(251, 249, 249);
+
+    padding: 0 1.5rem;
+
+
+    #logo {
+        color: rgb(244, 160, 44);
+        font-weight: bold;
+        font-size: clamp(5px, 2.5vw, 14px);
+        height: 9.7vh;
+        display: flex;
+        align-items: center;
+
+        sub {
+            margin-top: .5rem;
+            color: rgba(244, 160, 44, .5);
+        }
+
+    }
+
+    #head-line {
+        color: #131313e2;
+        margin: 4rem 0;
+        font-size: clamp(5px, 2.5vw, 14px);
+
+
+        p {
+            line-height: 1.5;
+            color: #131313e2;
+            margin-top: .7rem;
+        }
+
+
+
+    }
+}
+
+section {
+    border-radius: 2rem;
+    margin: 0 .2rem;
+    transition: all ease-in-out .2s;
+
+    &:hover {
+        transform: scale(.9);
+    }
+}
+
+section.box-wan {
+    grid-area: 3/1/4/2;
+    background: url('https://media.istockphoto.com/id/1287492741/photo/smiling-african-american-woman-wearing-glasses-and-wireless-earphones-makes-a-video-call-on.webp?b=1&s=170667a&w=0&k=20&c=CLyXrjztbC7IUkhajVUq4LJ_j7oGd64oDsIAK2sCnuU=');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+section.box-toh {
+    grid-area: 3/2/4/3;
+    background: url('https://media.istockphoto.com/id/1443914481/photo/brain-artificial-intelligence-cpu-concept.webp?b=1&s=170667a&w=0&k=20&c=8b_1vxcPtFoswxMCZwSNAjaE1BkSvrW5KabwJaJjZxg=');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+section.box-tree {
+    grid-area: 4/1/5/3;
+    background: url('https://images.unsplash.com/photo-1535303311164-664fc9ec6532?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzB8fHRlY2hub2xvZ3l8ZW58MHx8MHx8fDA%3D');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+header {
+    grid-area: 1/2/2/5;
+    background: rgb(244, 160, 44);
+    border-radius: 4rem 0 0 4rem;
+
+    nav {
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        ul {
+            display: flex;
+
+            li {
+                list-style: none;
+                margin: 0 1rem;
+
+                a {
+                    color: rgb(255, 255, 255);
+                    text-decoration: none;
+                    font-size: clamp(5px, 2.5vw, 12px);
+                    text-transform: capitalize;
+                    letter-spacing: 2px;
+
+                    &:hover {
+                        color: rgba(245, 243, 243, .8);
+                    }
+
+                }
+
+                #subscribe-btn {
+                    border: 1px solid white;
+                    border-radius: 2rem;
+                    padding: .6rem 2rem;
+                    transition: all ease-in-out .2s;
+
+                    &:hover {
+                        background: #fff;
+                        color: rgb(244, 160, 44);
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.candy {
+    grid-area: 2/3/5/4;
+    background: url('https://images.unsplash.com/photo-1512295767273-ac109ac3acfa?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8eWVsbG93JTIwdGVjaHxlbnwwfHwwfHx8MA%3D%3D');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 1.5rem;
+    border-radius: 2rem;
+
+    #date {
+        margin-bottom: auto;
+        padding: 1rem 2rem;
+        color: rgb(255, 255, 255);
+        background: rgba(118, 118, 118, 0.5);
+        border-radius: 2rem;
+        font-size: clamp(5px, 2.5vw, 14px);
+    }
+
+    #article-big {
+
+        p {
+            margin-top: .5rem;
+            font-size: clamp(5px, 2.5vw, 14px);
+        }
+    }
+
+    button {
+        color: #fff;
+        background: rgba(244, 160, 44, .3);
+        border: 1px solid white;
+        border-radius: 2rem;
+        padding: .6rem 3rem;
+
+        transition: all ease-in-out .2s;
+
+        &:hover {
+            background: rgba(244, 160, 44, 1);
+            color: rgb(255, 255, 255);
+        }
+    }
+}
+
+
+
+
+// ----- Responsive -----
+
+
+@media screen and (max-width: 695px) {
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1.2fr 1.5fr;
+        grid-template-rows: 1fr 4fr 3fr 2fr 1fr;
+
+        #date {
+            padding: 1rem;
+        }
+    
+
+        nav {
+            height: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            ul {
+                display: flex;
+
+                li {
+                    list-style: none;
+                    margin: 0 .5rem;
+
+                    a {
+                        font-size: clamp(5px, 2.5vw, 10px);
+                    }
+
+                }
+            }
+        }
+
+    }
+
+
+
+
+    section.box-wan {
+        grid-area: 3/1/3/3;
+    }
+
+    section.box-toh {
+        grid-area: 4/1/4/3;
+
+    }
+
+    section.box-tree {
+        grid-area: 5/1/5/5;
+    }
+
+    .main {
+        padding: 0 .7rem;
+
+
+        #logo {
+            height: 8.4vh;
+            font-size: clamp(16px, 2.5vw, 10.5px);
+        }
+
+        #head-line {
+            color: #131313e2;
+            margin: 4rem 0;
+            font-size: clamp(5px, 2.5vw, 10.5px);
+
+
+            p {
+                line-height: 1.5;
+                color: #131313e2;
+                margin-top: .7rem;
+            }
+
+        }
+    }
+
+}
+
+
