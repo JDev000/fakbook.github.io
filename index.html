@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fakbook</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="grid-container">
+        <header>
+            <nav>
+                <ul>
+                    <h1>Fakbook</h1>
+                    <svg id="nav-btn" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#5F6368">
+                        <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
+                    </svg>
+                </ul>
+                <ul>
+                    <li><a href="#">newsfeed</li>
+                    <li><a href="#">friends</a></li>
+                    <li><a href="#" id="notifications">Groups</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">settings</a></li>
+                    <li><a href="#">log out</a></li>
+                </ul>
+            </nav>
+            <nav>
+                <form action="#">
+                    <input type="text" placeholder="Say something...">
+                    <button>create post</button>
+                </form>
+            </nav>
+        </header>
+        <main>
+            <div class="post-card">
+                <h1>@jerome_Edica</h1>
+                <small><span>posted on:</span> nov. 11, 2023</small>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed ipsa odit commodi tenetur perferendis
+                    quas, cumque quis labore. Consectetur, possimus molestiae. Iusto quos aliquam, magnam consectetur
+                    tempore iure cumque esse!</p>
+                <button>like</button>
+                <button>unlike</button>
+                <button>share</button>
+                <button id="visit-profile">visit</button>
+            </div>
+            <div class="post-card">
+                <h1>@elon_Musk</h1>
+                <small>just now</small>
+                <p>take at look at this photo, a 3d model created by @jerome_Edica. great art right?</p>
+                <img src="./assets/architecture_Jerome.png" alt="">    
+                <button>like</button>
+                <button>unlike</button>
+                <button>share</button>
+                <button id="visit-profile">visit</button>
+            </div>
+            <div class="post-card">
+                <h1>@jerome_edica</h1>
+                <small><span>posted on:</span> nov. 11, 2023</small>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed ipsa odit commodi tenetur perferendis
+                    quas, cumque quis labore. Consectetur, possimus molestiae. Iusto quos aliquam, magnam consectetur
+                    tempore iure cumque esse!</p>
+                <button>like</button>
+                <button>unlike</button>
+                <button>share</button>
+                <button id="visit-profile">visit</button>
+            </div>
+            <div class="post-card">
+                <h1>@jerome_edica</h1>
+                <small><span>posted on:</span> nov. 11, 2023</small>
+                <p><code>//coding is fun right? <br> console.log('Hello World')</code></p>
+                <button>like</button>
+                <button>unlike</button>
+                <button>share</button>
+                <button id="visit-profile">visit</button>
+            </div>
+        </main>
+        <aside>
+            <ul>
+                <li>trends</li>
+                <li>discussions</li>
+                <li>favourite</li>
+            </ul>
+            <ul>
+                <p><strong>username:</strong></p>
+                <p>@jerome_edica</p>
+                <p><strong>followers:</strong></p>
+                <p>128,393 <em>live</em></p>
+                <p><strong>about me:</strong></p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe, facilis?</p>
+                <button>view profile</button>
+            </ul>
+        </aside>
+
+        <script src="main.js"></script>
+</body>
+</html>
