@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fakbook</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+
+<body>
+    <div class="grid-container">
+        <header>
+            <nav>
+                <div class="logo-container">
+                    <h1>Fakbook</h1>
+                </div>
+                <div class="svg-container">
+                    <svg id="nav-menu" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="#494848" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </div>
+                <ul>
+                    <li><a href="#">newsfeed</li>
+                    <li><a href="#">friends</a></li>
+                    <li><a href="#" id="notifications">Groups</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">settings</a></li>
+                    <li><a href="#">log out</a></li>
+                </ul>
+            </nav>
+            <nav>
+                <form action="#">
+                    <div class="icons">
+                        <i class="fas fa-home"></i>
+                        <i class="fas fa-user-friends"></i>
+                        <i class="fas fa-images"></i>
+                    </div>
+                    <div class="text-post">
+                        <input type="text" placeholder="Say something...">
+                        <button>create post</button>
+                    </div>
+                </form>
+            </nav>
+        </header>
+        <main>
+            <div class="post-card">
+                <h1>@jerome_Edica</h1>
+                <small><span>posted on:</span> nov. 11, 2023</small>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed ipsa odit commodi tenetur perferendis
+                    quas, cumque quis labore. Consectetur, possimus molestiae. Iusto quos aliquam, magnam consectetur
+                    tempore iure cumque esse!</p>
+                <button>like</button>
+                <button>unlike</button>
+                <button>share</button>
+                <button id="visit-profile">visit</button>
+            </div>
+            <div class="post-card">
+                <h1>@elon_Musk</h1>
+                <small>just now</small>
+                <p>take at look at this photo, a 3d model created by @jerome_Edica. great art right?</p>
+                <img src="./assets/architecture_Jerome.png" alt="">
+                <button>like</button>
+                <button>unlike</button>
+                <button>share</button>
+                <button id="visit-profile">visit</button>
+            </div>
+            <div class="post-card">
+                <h1>@jerome_edica</h1>
+                <small><span>posted on:</span> nov. 11, 2023</small>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed ipsa odit commodi tenetur perferendis
+                    quas, cumque quis labore. Consectetur, possimus molestiae. Iusto quos aliquam, magnam consectetur
+                    tempore iure cumque esse!</p>
+                <button>like</button>
+                <button>unlike</button>
+                <button>share</button>
+                <button id="visit-profile">visit</button>
+            </div>
+            <div class="post-card">
+                <h1>@jerome_edica</h1>
+                <small><span>posted on:</span> nov. 11, 2023</small>
+                <p><code>//coding is fun right? <br> console.log('Hello World')</code></p>
+                <button>like</button>
+                <button>unlike</button>
+                <button>share</button>
+                <button id="visit-profile">visit</button>
+            </div>
+        </main>
+        <aside id="aside-bar">
+            <ul>
+                <li>trends</li>
+                <li>discussions</li>
+                <li>favourite</li>
+            </ul>
+            <ul>
+                <p><strong>username:</strong></p>
+                <p>@jerome_edica</p>
+                <p><strong>followers:</strong></p>
+                <p id="followers">128,393</p>
+                <p><strong>about me:</strong></p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe, facilis?</p>
+                <button>view profile</button>
+            </ul>
+        </aside>
+
+        <script src="main.js"></script>
+
+</body>
+
+</html>
