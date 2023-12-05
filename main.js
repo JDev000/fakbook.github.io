@@ -118,15 +118,15 @@ saveBtn.addEventListener('click', () => {
 
 
 
-// if ("Notification" in window) {
-//     // Request permission for the browser to show notifications
-//     Notification.requestPermission().then(function (permission) {
-//         if (permission === "granted") {
-//             // Create and show a notification when the website loads
-//             new Notification("Fakbook has new update!", {
-//                 body: "Developed by Jerome Edica",
-//                 icon: "https://cdn-icons-png.flaticon.com/512/3771/3771464.png" // Replace with the path to your notification icon
-//             });
-//         }
-//     });
-// }
+if ("Notification" in window) {
+    // Request permission for the browser to show notifications
+    Notification.requestPermission().then(function (permission) {
+        if (permission === "granted") {
+            // Create and show a notification when the website loads
+            new Notification("Fakbook has new update!", {
+                body: "Developed by Jerome Edica",
+                icon: "https://cdn-icons-png.flaticon.com/512/3771/3771464.png" // Replace with the path to your notification icon
+            });
+        }
+    });
+}
